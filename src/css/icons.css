@@ -1,0 +1,73 @@
+@font-face {
+	font-family: 'icons';
+	src: url('fonts/icons.eot?5h5znp');
+	src: url('fonts/icons.eot?5h5znp#iefix') format('embedded-opentype'),
+		url('fonts/icons.ttf?5h5znp') format('truetype'),
+		url('fonts/icons.woff?5h5znp') format('woff'),
+		url('fonts/icons.svg?5h5znp#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='_icons-'],
+[class*=' _icons-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icons' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._icons-apple:before {
+	content: '\e900';
+}
+._icons-arrow-left:before {
+	content: '\e901';
+}
+._icons-arrow-right:before {
+	content: '\e902';
+}
+._icons-chef-hat:before {
+	content: '\e903';
+}
+._icons-cocktail:before {
+	content: '\e904';
+}
+._icons-coffee:before {
+	content: '\e905';
+}
+._icons-dish:before {
+	content: '\e906';
+}
+._icons-facebook:before {
+	content: '\e907';
+}
+._icons-grape:before {
+	content: '\e908';
+}
+._icons-instagram:before {
+	content: '\e909';
+}
+._icons-motorcycle:before {
+	content: '\e90a';
+}
+._icons-muffin:before {
+	content: '\e90b';
+}
+._icons-pin:before {
+	content: '\e90c';
+}
+._icons-triangle:before {
+	content: '\e90d';
+}
+._icons-twitter:before {
+	content: '\e90e';
+}

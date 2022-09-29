@@ -1,0 +1,19 @@
+.container {
+	--width: 1170;
+	--padding: 2rem;
+	max-width: minmax(var(--width), 100% - var(--padding));
+	margin-inline: auto;
+}
+body {
+	font-family: 'Manrope', sans-serif;
+	font-weight: 400;
+}
+.heading,
+.btn {
+	font-family: 'Elsie', cursive;
+	font-weight: 900;
+}
+.subheading {
+	font-family: 'Manrope', sans-serif;
+	font-weight: 700;
+}
