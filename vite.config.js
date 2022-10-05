@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { ViteAliases } from 'vite-aliases';
 import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react';
 
@@ -13,7 +14,7 @@ export default defineConfig({
 						return 'assets/images/[name]-[hash][extname]';
 					}
 
-					if (/\.(ttf|otf|fnt|woff|woff2)$/.test(name ?? '')) {
+					if (/\.(ttf|otf|fnt|woff)$/.test(name ?? '')) {
 						return 'assets/fonts/[name]-[hash][extname]';
 					}
 
@@ -33,6 +34,12 @@ export default defineConfig({
 	},
 	plugins: [
 		react(),
+		ViteAliases({
+			dir: 'src',
+			prefix: '@',
+			deep: true,
+			depth: 3,
+		}),
 		legacy({
 			targets: ['defaults', 'not IE 11'],
 		}),
