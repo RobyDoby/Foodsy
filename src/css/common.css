@@ -1,19 +1,52 @@
 .container {
-	--width: 1170;
+	--width: 1170px;
 	--padding: 2rem;
-	max-width: minmax(var(--width), 100% - var(--padding));
+	max-width: min(var(--width), 100% - var(--padding));
 	margin-inline: auto;
 }
+
 body {
 	font-family: 'Manrope', sans-serif;
 	font-weight: 400;
 }
+
 .heading,
 .btn {
 	font-family: 'Elsie', cursive;
 	font-weight: 900;
 }
+
 .subheading {
 	font-family: 'Manrope', sans-serif;
 	font-weight: 700;
+}
+
+.btn.empty {
+	--radius: 0.75rem;
+	padding: 1rem 1.5rem;
+	border: 1px solid var(--accent-color);
+	border-radius: var(--radius);
+	background-color: transparent;
+	color: var(--accent-color);
+	text-transform: uppercase;
+	transition: color 300ms ease-in-out;
+	position: relative;
+}
+.btn.empty::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: linear-gradient(#96e4dd, #5dc4b8);
+	border-radius: var(--radius);
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+.btn.empty:hover,
+.btn.empty:focus-visible {
+	color: var(--main-color-100);
+}
+.btn.empty:hover::before,
+.btn.empty:focus-visible::before {
+	opacity: 1;
 }

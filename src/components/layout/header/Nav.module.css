@@ -1,0 +1,33 @@
+@import '@css/customProps.css';
+
+.nav {
+	padding-block: 1rem;
+}
+
+.logo-img {
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: var(--main-color-900);
+}
+
+.nav-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: clamp(2rem, 1rem + 3vw, 3.5rem);
+}
+
+.nav-list__link {
+	text-decoration: none;
+	color: var(--main-color-900);
+	transition: color 150ms linear;
+}
+.nav-list__link:hover,
+.nav-list__link:focus-visible {
+	color: var(--accent-color);
+}
+
+.nav-list li:last-child {
+	margin-left: auto;
+}
