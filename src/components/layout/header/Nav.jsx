@@ -31,8 +31,8 @@ const Nav = () => {
 								Contact
 							</a>
 						</li>
-						<li className={'heading'}>
-							<a href='#' className={`${classes['nav-list__link']} btn empty`}>
+						<li>
+							<a href='#' className={`${classes['nav-list__link']} btn-empty`}>
 								Contact us
 							</a>
 						</li>

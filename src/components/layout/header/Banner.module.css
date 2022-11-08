@@ -1,0 +1,116 @@
+.banner {
+    padding-block: 8em 10em;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.text {
+    line-height: 1.3;
+}
+.banner-title {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.banner-img {
+    position: relative;
+}
+.grid-pattern {
+    --gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "first-box second-box"
+        "first-box third-box"
+        "first-box third-box"
+        "avatars third-box";
+    gap: var(--gap);
+}
+.first-box {
+    grid-area: first-box;
+    background: linear-gradient(180deg, #F89C72 0%, #EF633E 100%);
+    border-radius: 100px 24px 24px 24px;
+    min-height: 416px;
+    position: relative;
+    margin-top: var(--gap);
+}
+.first-box img {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+}
+.second-box {
+    grid-area: second-box;
+    min-height: 96px;
+    background: url(../../../assets/images/bluebox.png) no-repeat;
+    background-size: cover;
+    border-radius: 24px 100px 24px 24px;
+}
+.third-box {
+    grid-area: third-box;
+    min-height: 416px;
+    background: url(../../../assets/images/imgbox.png) no-repeat;
+    background-size: cover;
+    border-radius: 24px 24px 100px 24px;
+}
+.avatars {
+    grid-area: avatars;
+    display: flex;
+    justify-content: flex-end;
+}
+.avatar-element {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1rem;
+    background: linear-gradient(180deg, #F89C72 0%, #EF633E 100%);
+    font-size: 1.5rem;
+    color: var(--main-color-100);
+}
+.play-modal {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100vmax;
+    background-color: var(--main-color-100);
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+.play-modal::before {
+    transform: translateX(25%);
+    transform: scale(1);
+}
+.play-modal:hover,
+.play-modal:focus-visible {
+    animation: ping 550ms ease-in;
+}
+
+@keyframes ping {
+    0% {
+        transform: translate(50%, -50%) scale(1);
+    }
+    30% {
+        transform: translate(50%, -50%) scale(0.8);
+    }
+    60% {
+        transform: translate(50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(50%, -50%) scale(1);
+    }
+}
