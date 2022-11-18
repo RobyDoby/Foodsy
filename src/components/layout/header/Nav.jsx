@@ -1,3 +1,4 @@
+import Button from '../../UI/Button';
 import classes from './Nav.module.css';
 
 const Nav = () => {
@@ -32,9 +33,7 @@ const Nav = () => {
 							</a>
 						</li>
 						<li>
-							<a href='#' className={`${classes['nav-list__link']} btn-empty`}>
-								Contact us
-							</a>
+							<Button>Contact Us</Button>
 						</li>
 					</ul>
 				</nav>
