@@ -20,6 +20,7 @@
 }
 .banner-img {
     position: relative;
+    max-width: 35.5rem;
 }
 .grid-pattern {
     --gap: 2rem;

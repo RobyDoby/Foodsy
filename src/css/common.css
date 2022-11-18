@@ -93,3 +93,7 @@ body::after {
 .btn-empty:focus-visible::before {
 	opacity: 1;
 }
+
+section {
+    padding-block: 1.5rem 10rem;
+}
