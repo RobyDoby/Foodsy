@@ -1,0 +1,98 @@
+.section-header {
+    text-align: center;
+}
+
+.description {
+    max-width: 50ch;
+    margin-inline: auto;
+}
+
+.content {
+    padding-top: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16.5rem, 100%), 16.5rem));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-block: 3rem;
+    background-color: var(--main-color-100);
+    border-radius: 100px 24px 24px 24px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 24, 52, 0.080899);
+    position: relative;
+    top: 0;
+    transition: top 150ms ease-in-out;
+}
+
+.card-icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 100vmax;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+}
+
+.card:nth-of-type(3n + 1) .card-icon {
+    background: var(--linear-gradient-1);
+    color: var(--subaccent-color);
+}
+
+.card:nth-of-type(3n + 2) .card-icon {
+    background: var(--linear-gradient-2);
+    color: var(--accent-color);
+}
+
+.card:nth-of-type(3n + 3) .card-icon {
+    background: var(--linear-gradient-3);
+    color: #EDA42D;
+}
+
+.card:hover,
+.card:focus-visible {
+    top: 3rem;
+    z-index: 3;
+}
+
+.card:last-of-type {
+    border-radius: 24px 24px 100px 24px;
+}
+
+.card-title {
+    margin-block: 1.75rem 1rem;
+    font-family: Elsie, sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.25rem, 1rem + 3vw, 1.5rem);
+}
+.card-description {
+    font-family: Manrope, sans-serif;
+    font-size: clamp(.75rem, .75rem + 2vw, 1rem);
+    font-weight: 400;
+    line-height: 2rem;
+    opacity: .5;
+    margin-bottom: .875rem;
+}
+
+.cta {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: auto;
+    color: inherit;
+    transition: color 150ms ease-in-out;
+}
+.cta:hover,
+.cta:focus-visible {
+    color: var(--accent-color);
+}

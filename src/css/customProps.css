@@ -3,4 +3,8 @@
 	--main-color-900: #333333;
 	--accent-color: #5dc4b8;
     --subaccent-color: #EF633E;
+
+    --linear-gradient-1: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
+    --linear-gradient-2: linear-gradient(180deg, #E4FFFC 0%, #C5FFF8 100%);
+    --linear-gradient-3: linear-gradient(180deg, #FFF8EC 0%, #FFEFD4 100%);
 }

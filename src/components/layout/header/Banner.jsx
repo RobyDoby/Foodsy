@@ -1,3 +1,4 @@
+import Button from '../../UI/Button';
 import classes from './Banner.module.css';
 
 const Banner = () => {
@@ -14,7 +15,7 @@ const Banner = () => {
 							The sky was cloudless and of a deep dark blue. The spectacle before us
 							was indeed sublime.
 						</p>
-						<button className='btn'>See menu</button>
+						<Button className='btn'>See menu</Button>
 					</div>
 					<div className={classes['banner-img']}>
 						<div className={classes['grid-pattern']}>
@@ -38,7 +39,7 @@ const Banner = () => {
 								</div>
 							</div>
 						</div>
-						<button className={`${classes['play-modal']} _icons-triangle`}></button>
+						<Button className={`${classes['play-modal']} _icons-triangle`}></Button>
 					</div>
 				</div>
 			</div>
