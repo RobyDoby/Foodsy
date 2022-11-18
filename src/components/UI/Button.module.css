@@ -1,0 +1,50 @@
+.btn {
+    --radius: 0.75rem;
+	padding: 1em 1.5em;
+	border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+	background: linear-gradient(#96e4dd, #5dc4b8);
+	color: var(--main-color-100);
+	text-transform: uppercase;
+	position: relative;
+    z-index: 2;
+    transition: transform 250ms ease-in-out;
+    display: block;
+}
+.btn:hover,
+.btn:focus-visible {
+    transform: scale(0.9);
+}
+.btn-empty {
+	--radius: 0.75rem;
+    display: block;
+	padding: 1rem 1.5rem;
+	border: 1px solid var(--accent-color);
+	border-radius: var(--radius);
+	background-color: transparent;
+	color: var(--accent-color);
+	text-transform: uppercase;
+	transition: color 300ms ease-in-out;
+	position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.btn-empty::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: linear-gradient(#96e4dd, #5dc4b8);
+	border-radius: var(--radius);
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+.btn-empty:hover,
+.btn-empty:focus-visible {
+	color: var(--main-color-100);
+}
+.btn-empty:hover::before,
+.btn-empty:focus-visible::before {
+	opacity: 1;
+}
